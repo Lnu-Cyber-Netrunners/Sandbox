@@ -1,0 +1,250 @@
+﻿body {
+    margin: 0;
+    min-width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+    .header .container {
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.nav_icon {
+    background-color: black;
+    padding: 10px;
+}
+
+    .nav_icon .line {
+        display: block;
+        width: 25px;
+        height: 5px;
+        background-color: aliceblue;
+    }
+
+        .nav_icon .line.middle {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+.lang .link {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+    .lang .link.active {
+        color: blue;
+    }
+
+    .lang .link:first-child::after {
+        content: " / ";
+        color: black;
+        font-weight: bold;
+    }
+
+    .lang .link:hover {
+        color: rgba(0, 0, 0, 0.7)
+    }
+
+    .lang .link.active:hover {
+        color: rgba(0, 0, 255, 0.7)
+    }
+
+.imgbox {
+    position: relative;
+    display: inline-block;
+}
+
+    .imgbox img {
+        display: block;
+        width: 100%;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.bordered-text {
+    border: 1px solid #000;
+    padding: 40px; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate( 0, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .text-overlay {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-overlay {
+        font-size: 32px;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-overlay {
+        font-size: 24px;
+        left: 10px;
+    }
+}
+
+
+.main {
+    position: relative;
+}
+
+.row {
+    max-width: 1300px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+}
+
+
+
+.title {
+    border-left: 2px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 22px;
+    }
+}
+
+.p0 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .p0 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p0 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .p0 {
+        font-size: 18px;
+    }
+}
+
+.button_row {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .button_row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+.button_wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button_wrap .button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all .4s;
+}
+
+.button_wrap .button:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+
+.footer {
+    background: black;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.text {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+    .text:first-child {
+        margin-top: 0;
+    }
+
+body {
+}
